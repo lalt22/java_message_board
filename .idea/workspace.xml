@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="616409ee-cf4a-4140-bbb5-f8894a47a529" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/java_message_board.iml" afterDir="false" />

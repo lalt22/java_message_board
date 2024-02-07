@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/3331T323-Assignment.iml" filepath="$PROJECT_DIR$/3331T323-Assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serverside/Server.iml" filepath="$PROJECT_DIR$/serverside/Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clientside/clientside.iml" filepath="$PROJECT_DIR$/clientside/clientside.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serverside/serverside.iml" filepath="$PROJECT_DIR$/serverside/serverside.iml" />
+    </modules>
+  </component>
+</project>

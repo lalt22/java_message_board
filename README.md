@@ -1,6 +1,6 @@
 # Java Message Board
 A representation of TCP and UDP connections and client-server interactions built with Java 11. 
-
+Code can be found in the master branch.
 ##How To Use
 Server and Client functionality are in the serverside and clientside directories respectively.
 

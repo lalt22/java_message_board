@@ -1,10 +1,11 @@
 # Java Message Board
 A representation of TCP and UDP connections and client-server interactions built with Java 11. 
 Code can be found in the master branch.
-##How To Use
+
+## How To Use
 Server and Client functionality are in the serverside and clientside directories respectively.
 
-###Run Server
+### Run Server
 In CLI
 ```console
 % cd serverside
@@ -17,7 +18,7 @@ For example
 This will run the server on PORT_NUMBER and will allow clients to attempt to authorise a maximum of NUM_MAX_ATTEMPTS
 before they are blocked for 10 seconds.
 
-###Run Client
+### Run Client
 In CLI
 
 ```console
@@ -45,9 +46,9 @@ If a client attempts to enter invalid credentials they will be prompted to re-at
 NUM_MAX_ATTEMPTS the user will be blocked for 10 seconds, even if they attempt with correct credentials.
 After the blocked period has ended, the number of attempts will reset to 0.
 
-###Client Commands
+### Client Commands
 Once successfully logged in, users can send a variety of commands.
-####/msgto
+#### /msgto
 ```console
 /msgto USERNAME MESSAGE_CONTENT
 ```
@@ -56,7 +57,7 @@ sender will be informed.
 If the message is successfully sent, the user will be notified as well. The receiving user will receive 
 the message with the timestamp, sender and message content displayed.
 
-####/activeuser
+#### /activeuser
 ```console
 /activeuser 
 ```
@@ -64,7 +65,7 @@ The server will check if there are any users active on the server other than the
 active users, time they logged in and their IP addresses and UDP numbers.
 If there are no other active users, the  user will be notified.
 
-####/creategroup
+#### /creategroup
 ```console
 /creategroup GROUP_NAME USER_NAME1 USERNAME2 ...
 ```
@@ -74,14 +75,14 @@ to the number of users that can be added to the group chat.
 If the group chat name already exists, the user will be notified by the server. 
 The server will create a log file that stores the messages sent in the chat.
 
-####/joingroup
+#### /joingroup
 ```console
 /joingroup GROUP_NAME
 ```
 If the user was added to the group chat by the chat creator, they will need to join the group with this command to be able to send
 messages. If the user has not been added to the chat, they will not be able to join the group and will be notified. 
 
-####/groupmsg 
+#### /groupmsg 
 ```console
 /groupmsg GROUP_NAME MESSAGE
 ```
@@ -90,14 +91,14 @@ The server will check if the user has joined - if not, the user will be notified
 Once the message is sent, the server will add the sender's name, timestamp and message to the group chat log. All members of the group
 chat will also have the message displayed in their terminal. If there are no active users, ensure that the message is logged. 
 
-####/p2pvideo
+#### /p2pvideo
 ```console
 /p2pvideo USER_NAME FILE_NAME
 ```
 This will allow users to send binary files to each other via UDP. The only connection this will make to the server
 is checking whether the destination USER_NAME is active. If not, the sender user will receive a notification.
 
-####/logout
+#### /logout
 ```console
 /logout
 ```
